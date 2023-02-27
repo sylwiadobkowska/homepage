@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing:inherit;
+}
+
+.body {
+    background-color: rgb(70, 39, 94);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.section__article {
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.726);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 4px dotted whitesmoke;
+}
+
+.photo__image {
+    margin: 0 auto;
+    border: 4px ridge white;
+    border-radius: 100%;
+}

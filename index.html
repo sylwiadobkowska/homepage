@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylwia Dobkowska</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tableStyle.css" rel="stylesheet">
+    <link href="css/navStyle.css" rel="stylesheet">
+    <link href="css/headerStyle.css" rel="stylesheet">
+    <link href="css/footerStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+
+<body class="body">
+    <header>
+        <h1 class="header__title">Sylwia Dobkowska</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="nav__element"><a class="nav__link" href="#o-mnie">O MNIE</a></li>
+            <li class="nav__element"><a class="nav__link" href="#ulubione-utwory">ULUBIONE UTWORY</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            <button class="button" onclick="toggleButton()">Ukryj zdjęcie</button>
+        </p>
+        <div id="photo">
+            <a href="https://ibb.co/Vx33TCQ"><img class="photo__image" height="300" width="300"
+                    src="https://i.ibb.co/3vkkcFM/profilowe.jpg" alt="Sylwia Dobkowska"></a>
+        </div>
+        <section>
+            <h2 class="section__subHeader" id="o-mnie">O MNIE</h2>
+            <article class="section__article">
+                <p><strong>Cześć! Jestem Sylwia, mam 22 lata </strong>
+                    i aktualnie pracuję w wirtualnym biurze, w którym wbrew
+                    pozorom nie da się pracować zdalnie. Z tego powodu
+                    zdecydowałam się rozpocząć ten kurs - żeby mieć możliwość pracy
+                    zdalnej i jednoczesnego podróżowania. Chciałabym kiedyś
+                    kupić i odnowić kampera, a potem przez jakiś czas
+                    uskuteczniać <b><em>#vanlife</em></b> pracując zdalnie z dowolnego miejsca na świecie. Skończyłam
+                    <b>studia
+                        na kierunku <u>Antropozoologia</u></b>.
+                </p>
+                <hr>
+                <p>Moją największą pasją jest <strong><u>praca z końmi</u></strong>.
+                    Od czterech lat pracuję jako <strong>instruktor jazdy konnej</strong>, sama też regularnie trenuję,
+                    z nadzieją, że przy dobrych wiatrach uda mi się wystartować w najbliższym czasie w zawodach.
+                    Oprócz tego dużą przyjemność sprawia mi rysunek, karaoke i odkrywanie nowych, dzikich miejsc.
+                    W ostatnim czasie zaczęłam też łapać zajawkę na rekonstrukcje historyczne, ale póki co, w tym
+                    temacie
+                    raczkuję. </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="section__subHeader" id="ulubione-utwory">Top 10 ulubionych piosenek ostatniego roku</h2>
+            <table class="table">
+                <caption class="table__caption">Ulubione utwory</caption>
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Nastrój</th>
+                        <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                        <th class="table__cell table__cell--header" scope="col">Wykonawca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row" rowspan="7">Wesołe</th>
+                        <td class="table__cell table__data">Bam Bam</td>
+                        <td class="table__cell table__data">Camila Cabello, Ed Sheeran</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">Bad habits</td>
+                        <td class="table__cell table__data">Ed Sheeran</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">Zero Calorie Cookie</td>
+                        <td class="table__cell table__data">Marie</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">I'm Yours</td>
+                        <td class="table__cell table__data">Jason Mraz</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">Manila</td>
+                        <td class="table__cell table__data">Ray Dalton, Alvaro Soler</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">The Middle</td>
+                        <td class="table__cell table__data">Jimmy Eat World</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">Can't buy me love</td>
+                        <td class="table__cell table__data">The Beatles</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row" rowspan="3">Smutne</th>
+                        <td class="table__cell table__data">Wicked Game</td>
+                        <td class="table__cell table__data">Chris Isaak</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">you broke me first</td>
+                        <td class="table__cell table__data">Tate McRae</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell table__data">Sweather Weather</td>
+                        <td class="table__cell table__data">The Neighbourhood</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <footer>
+            <h3 class="footer__header">Poznaj mnie lepiej!</h3>
+            <a class="footer__link" href="https://www.instagram.com/sylwi4_/">Na Instagramie</a>
+            <a class="footer__link" href="https://www.facebook.com/sylwia.dobkowska.14/">Na Facebooku</a>
+        </footer>
+    </main>
+</body>
+
+</html>

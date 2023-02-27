@@ -1,0 +1,12 @@
+.footer__link {
+    color:white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.footer__link:hover {
+    color:pink;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
