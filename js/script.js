@@ -7,7 +7,9 @@
         const photo = document.getElementById("photo");
         photo.style.display = photo.style.display === "none" ? "block" : "none";
     }
-    const button = document.querySelector(".button");
+    
+    {
+        let button = document.querySelector(".button");
     const changeButtonInnerText = () => {
         togglePhoto();
 
@@ -21,8 +23,9 @@
 
     }
 
-
     init();
+    }
+
 
 
 }
