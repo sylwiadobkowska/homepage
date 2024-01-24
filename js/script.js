@@ -1,13 +1,28 @@
-console.log("Witaj na mojej pierwszej stronie!");
+{
+    const welcome = () => {
+        console.log("Witaj na mojej pierwszej stronie!");
+    }
 
-let button = document.querySelector(".button");
-let image = document.querySelector(".image");
+    const togglePhoto = () => {
+        const photo = document.getElementById("photo");
+        photo.style.display = photo.style.display === "none" ? "block" : "none";
+    }
+    const button = document.querySelector(".button");
+    const changeButtonInnerText = () => {
+        togglePhoto();
 
-button.addEventListener("click", () => {
-    if (button.innerText === "Ukryj zdjęcie") {
-        button.innerText = "Pokaż zdjęcie";
-    } else button.innerText = "Ukryj zdjęcie";
+        button.innerText = button.innerText === "Pokaż zdjęcie" ? "Ukryj zdjęcie" : "Pokaż zdjęcie";
+    }
 
-    const x = document.getElementById("photo");
-    x.style.display = x.style.display === "none" ? "block" : "none";
-})
+    const init = () => {
+        button.addEventListener("click", changeButtonInnerText);
+
+        welcome();
+
+    }
+
+
+    init();
+
+
+}
